@@ -21,14 +21,14 @@ account is enabled or disabled.
 |         |                |                   |                     |                 |
 |         | changeStatus() |                   | if account enabled  | disable account |
 |         |                |                   | if account disabled | enable account  |
-|         |                |                   |                     |                 |
-|         |                |                   |                     |                 |
+|         | getStatus()    |                   | if account enabled  | return true     |
+|         |                |                   | if account disabled | return false    |
 
 
 | Classes | Methods                                      | Member Variables | Scenario                              | Output/result                 |
 |---------|----------------------------------------------|------------------|---------------------------------------|-------------------------------|
 | User    |                                              | Account account  |                                       |                               |
-|         |                                              |                  |                                       |                               |
+|         |                                              | String name      |                                       |                               |
 |         | createAccount(String email, String password) |                  | if email doesnt contain @             | Return "invalid email"        |
 |         |                                              |                  | if password is less than 8 characters | Return "invalid password"     |
 |         |                                              |                  |                                       |                               |
