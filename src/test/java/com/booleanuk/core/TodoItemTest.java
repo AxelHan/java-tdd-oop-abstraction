@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class TodoItemTest {
     @Test
     public void testGetters(){
-        TodoItem item = new TodoItem("Clean", "done before wednesday", "incomplete");
+        TodoItem item = new TodoItem("Clean", "done before wednesday");
 
         Assertions.assertEquals("incomplete", item.getStatus());
         Assertions.assertEquals("Clean", item.getTitle());
@@ -15,13 +15,13 @@ class TodoItemTest {
 
     @Test
     public void testSetters(){
-        TodoItem item = new TodoItem("Cook", "done before saturday", "complete");
+        TodoItem item = new TodoItem("Cook", "done before saturday");
 
         item.setTitle("Clean");
         item.setDetail("done before wednesday");
         item.chageStatus();
 
-        Assertions.assertEquals("incomplete", item.getStatus());
+        Assertions.assertEquals("complete", item.getStatus());
         Assertions.assertEquals("Clean", item.getTitle());
         Assertions.assertEquals("done before wednesday", item.getDetail());
     }
