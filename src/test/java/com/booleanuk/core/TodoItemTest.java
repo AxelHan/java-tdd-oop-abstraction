@@ -19,7 +19,7 @@ class TodoItemTest {
 
         item.setTitle("Clean");
         item.setDetail("done before wednesday");
-        item.chageStatus();
+        item.changeStatus();
 
         Assertions.assertEquals("complete", item.getStatus());
         Assertions.assertEquals("Clean", item.getTitle());
