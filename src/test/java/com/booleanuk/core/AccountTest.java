@@ -7,7 +7,7 @@ public class AccountTest {
 
     @Test
     public void testChangeStatus(){
-        Account account = new Account();
+        Account account = new Account("email", "password");
         Assertions.assertFalse(account.getStatus());
         account.changeStatus();
         Assertions.assertTrue(account.getStatus());
