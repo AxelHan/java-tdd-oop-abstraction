@@ -14,26 +14,26 @@ address without an @ symbol in it.
 5 I want users to know if they are able to log in or not based on whether their
 account is enabled or disabled.
 
-| Classes | Methods        | Member Variables  | Scenario            | Output/result   |
-|---------|----------------|-------------------|---------------------|-----------------|
-| Account |                | boolean isEnabled |                     |                 |
-|         |                |                   |                     |                 |
-|         |                |                   |                     |                 |
-|         | changeStatus() |                   | if account enabled  | disable account |
-|         |                |                   | if account disabled | enable account  |
-|         | getStatus()    |                   | if account enabled  | return true     |
-|         |                |                   | if account disabled | return false    |
+| Classes | Methods        | Member Variables    | Scenario            | Output/result   |
+|---------|----------------|---------------------|---------------------|-----------------|
+| Account |                | 4 boolean isEnabled |                     |                 |
+|         |                |                     |                     |                 |
+|         |                |                     |                     |                 |
+|         | changeStatus() |                     | if account enabled  | disable account |
+|         |                |                     | if account disabled | enable account  |
+|         | getStatus()    |                     | if account enabled  | return true     |
+|         |                |                     | if account disabled | return false    |
 
 
-| Classes | Methods                                      | Member Variables | Scenario                              | Output/result                 |
-|---------|----------------------------------------------|------------------|---------------------------------------|-------------------------------|
-| User    |                                              | Account account  |                                       |                               |
-|         |                                              | String name      |                                       |                               |
-|         | createAccount(String email, String password) |                  | if email doesnt contain @             | Return "invalid email"        |
-|         |                                              |                  | if password is less than 8 characters | Return "invalid password"     |
-|         |                                              |                  |                                       |                               |
-|         | Login(String email, String password)         |                  | If account not enabled                | Return "account not enabled"  |
-|         |                                              |                  |                                       |                               |
+| Classes | Methods                                        | Member Variables | Scenario                                | Output/result                 |
+|---------|------------------------------------------------|------------------|-----------------------------------------|-------------------------------|
+| User    |                                                | Account account  |                                         |                               |
+|         |                                                | String name      |                                         |                               |
+|         | 1 createAccount(String email, String password) |                  | 3 if email doesnt contain @             | Return "invalid email"        |
+|         |                                                |                  | 2 if password is less than 8 characters | Return "invalid password"     |
+|         |                                                |                  |                                         |                               |
+|         | Login(String email, String password)           |                  | 5 If account not enabled                | Return "account not enabled"  |
+|         |                                                |                  |                                         |                               |
          
 
 
