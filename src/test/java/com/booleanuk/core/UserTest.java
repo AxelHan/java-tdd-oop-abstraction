@@ -10,7 +10,7 @@ public class UserTest {
         User user = new User("Axel");
 
         user.createAccount("axel.co.hannson@gmail.com", "myPassword");
-        Assertions.assertNotNull(user.account);
+        Assertions.assertNotNull(user.getAccount());
     }
 
     @Test
@@ -40,7 +40,7 @@ public class UserTest {
         User user = new User("Axel");
         user.createAccount("axel.co.hannson@gmail.com", "myPassword");
         Assertions.assertEquals("Account disabled", user.login("email", "myPassword"));
-        user.account.changeStatus();
+        user.getAccount().changeStatus();
         Assertions.assertEquals("Account enabled", user.login("email", "myPassword"));
     }
 
